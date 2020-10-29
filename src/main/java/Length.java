@@ -15,6 +15,9 @@ public class Length {
         if (unit.equals("Foot")) {
             this.amountInInch = 12 * amount;
         }
+        else if (unit.equals("Yard")) {
+            this.amountInInch = 36 * amount;
+        }
         else {
             this.amountInInch = amount;
         }
