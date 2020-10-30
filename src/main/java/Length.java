@@ -35,9 +35,4 @@ public class Length {
     public String toString() {
         return format("%d (%s)", amount, unit);
     }
-
-    @Override
-    public int hashCode() {
-        return 0;
-    }
 }
