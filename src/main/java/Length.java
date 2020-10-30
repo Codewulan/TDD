@@ -7,15 +7,15 @@ import static java.lang.String.format;
 public class Length {
     private int amountInInch;
     private int amount;
-    private String unit;
+    private Unit unit;
 
-    public Length(int amount, String unit) {
+    public Length(int amount, Unit unit) {
         this.amount = amount;
         this.unit = unit;
-        if (unit.equals("Foot")) {
+        if (unit == Unit.Foot) {
             this.amountInInch = 12 * amount;
         }
-        else if (unit.equals("Yard")) {
+        else if (unit == Unit.Yard) {
             this.amountInInch = 36 * amount;
         }
         else {
@@ -33,6 +33,6 @@ public class Length {
 
     @Override
     public String toString() {
-        return format("%d (%s)", amount, unit);
+        return format("%d (%s)", amount, unit.text);
     }
 }
