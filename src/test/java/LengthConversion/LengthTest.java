@@ -1,9 +1,17 @@
+package LengthConversion;
+
+import LengthConversion.Length;
+import LengthConversion.Unit;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
+ * 长度单位换算
+ * 	• 1英尺（foot）= 12英寸（inch）
+ * 	• 1码（yard）= 3英尺
+ * 	
  * @author paige
  * @create 2020-10-29 17:03
  */
